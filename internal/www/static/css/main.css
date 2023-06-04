@@ -1,0 +1,41 @@
+html {
+    margin: 0px;
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+.contact {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.links {
+    display: flex;
+	justify-content: center;
+}
+
+.link {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: white;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }

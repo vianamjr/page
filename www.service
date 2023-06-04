@@ -1,0 +1,10 @@
+[Unit]
+Description='page www service'
+
+[Service]
+User=page
+ExecStart=/apps/page/bin/www --port=8080
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
