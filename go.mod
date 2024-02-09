@@ -1,3 +1,3 @@
 module github.com/vianamjr/page
 
-go 1.20
+go 1.22.0

@@ -45,9 +45,9 @@ func New(c Config) (*Service, error) {
 	fileServer := http.FileServer(http.FS(static.FS))
 	// TODO: add a custom file handler, only accepts *.css || *.js paths.
 	// TODO: do not serve the files (folders view) under /static...
-	mux.Handle("/static/", http.StripPrefix("/static/", fileServer))
+	mux.Handle("GET /static/", http.StripPrefix("/static/", fileServer))
 
-	mux.HandleFunc("/", homeHandler)
+	mux.HandleFunc("GET /", homeHandler)
 
 	return &Service{
 		config: c,
